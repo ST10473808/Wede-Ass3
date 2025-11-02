@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How Sky bright services started">
+    <meta name="keywords" content="Beyers Smit, Dietrich Coetzee, renewable energy, Eskom, South Africa">
+    <meta name="author" content="Armand Kruger">
+    <title>Sky Bright Services</title>
+
+   <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <!--dark mode-->
+       <button onclick="toggleDarkMode()">Dark Mode</button>
+
+   <script>
+function toggleDarkMode() {
+ 
+  document.body.classList.toggle("dark-mode");
+
+  
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// when the page loads, the theme stays the same
+window.addEventListener("load",() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+</script>
+
+ <header id="ribbon">
+    <nav>
+        <ul>
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="Services.html">Services</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="testimonials.html">testimonials</a></li>
+             <li><a href="enquire.html">Enquire</a></li>
+        </ul>
+    </nav>
+</header>
+
+        <H1>How it all started</H1>
+<div style="color: black;">
+      <p>We (Beyers Smit and Dietrich Coetzee) started this company as a side hustle out of our garage to generate some extra income.
+         At the time, we were just 25 and 26 years old, full of energy, ideas, and determination, not knowing that what began as a small project would eventually grow into something far bigger than we ever imagined. 
+         Our early days were filled with long hours, countless trial-and-error experiments, and learning the ropes of running a business almost entirely on our own.
+          Every small success motivated us to keep pushing, and every failure taught us valuable lessons that shaped the foundation of our company.</p>
+
+<p>As we’ve grown older and more experienced, and as our families now live comfortably thanks to the stability our business has provided, we’ve set our sights on much bigger goals.
+     We aspire to grow into the largest solar panel company not only in Gauteng but eventually across the whole of South Africa. 
+     Yet, growth for us is not just about profits or market share. Our primary mission is to help people in need, whether by providing affordable solar solutions or supporting community initiatives, without expecting anything in return.
+      We believe that true success comes from making a positive impact on others’ lives and contributing to a better society.</p>
+
+<p>Unlike many other companies in the renewable energy sector, our passion isn’t solely about “going green.” 
+    While environmental benefits are a welcome outcome, our main focus is on reducing South Africa’s dependence on Eskom and combating the burden of ever-increasing electricity prices. 
+    By providing practical, efficient, and cost-effective solar solutions, we aim to give people control over their energy consumption and help them save money, while simultaneously making the country a little more environmentally friendly. 
+    In essence, we want to create a sustainable future for our continent, one solar panel at a time, while empowering individuals and communities to thrive independently.</p>
+
+<p>Our journey from a humble garage project to a company with a vision for nationwide impact has taught us the value of persistence, innovation, and integrity.
+     We know that the road ahead will present new challenges, but with our dedication, our talented team, and the support of our customers, we are confident that we can turn our vision into reality.
+     Every step we take is guided by our commitment to making South Africa greener, more self-reliant, and better for generations to come.</p>
+</div>
+     <footer id="footer-ribbon">
+        <ul>
+       <li>
+        Call us
+             <p>041 368 7655</p>
+        </li>
+            <li>
+                Email us
+             <p><a href="mailto:skybrightservices@gmail.com">skybrightservices@gmail.com</a></p>
+            </li>
+            <li>
+                Business Hours
+           
+            <P>Monday to friday 08:00 - 18:00</P>
+             </li>
+        </ul>
+    </footer>
+</body>
+</html>
+<!--https://www.youtube.com/watch?v=rMK1eGi5k7I-->
+<!--zahra bulbulia-->
+<!--w3schools-->

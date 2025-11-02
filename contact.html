@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services we provide and where whe are located">
+    <meta name="keywords" content="Our loctaion, Services we offer, Solar panel installation, House painting, Solar panel cleaning and maintenance, Gutter cleaning and repairs">
+    <meta name="author" content="Armand Kruger">
+    <title>Sky Bright Services</title>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+  form { max-width: 400px; margin: auto; }
+  input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+  button { padding: 10px 20px; }
+  .error { color: red; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+ <!--dark mode-->
+   <button onclick="toggleDarkMode()">Dark Mode</button>
+
+   <script>
+function toggleDarkMode() {
+  
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// when the page loads the them stays the same
+window.addEventListener("load",() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+</script>
+
+ <header id="ribbon">
+    <nav>
+        <ul>
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="Services.html">Services</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="testimonials.html">testimonials</a></li>
+             <li><a href="enquire.html">Enquire</a></li>
+        </ul>
+    </nav>
+</header>
+    <!--the form that the user fills in for more information-->
+      <form id="contactform">
+        <label for="Name">Name and Surname:</label>
+        <input type="text" id="Name" name="Name and surname">
+        <div id="nameerror" class="error"></div>
+         <br>
+          <label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email">
+        <div id="emailerror" class="error"></div>
+        <br>
+          <label for="Contact">Contact number:</label>
+        <input type="text" id="Contact" name="Contact number">
+        <div id="contacterror" class="error"></div>
+        <br>
+          <Label for="Message">Message:</Label>
+          <textarea id="Message" rows="5" placeholder="Your Enquiry"></textarea>
+          <div id="messageerror" class="error"></div>
+        <br>
+          <button type="submit">Submit</button>
+      </form>
+     
+     <footer id="footer-ribbon">
+        <ul>
+       <li>
+        Call us
+             <p>041 368 7655</p>
+        </li>
+            <li>
+                Email us
+             <p><a href="mailto:skybrightservices@gmail.com">skybrightservices@gmail.com</a></p>
+            </li>
+            <li>
+                Business Hours
+           
+            <P>Monday to friday 08:00 - 18:00</P>
+             </li>
+            </ul>
+    </footer>
+     <script src="contact.js"></script>
+</body>
+</html>
+<!--https://www.youtube.com/watch?v=rMK1eGi5k7I-->
+<!--zahra bulbulia-->
+<!--w3schools-->

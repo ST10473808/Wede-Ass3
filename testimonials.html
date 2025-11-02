@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Bright Services</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <!--dark mode-->
+   <button onclick="toggleDarkMode()">Dark Mode</button>
+
+   <script>
+function toggleDarkMode() {
+ 
+  document.body.classList.toggle("dark-mode");
+
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+  // when the page loads the them stays the same
+window.addEventListener("load",() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+</script>
+
+      <header id="ribbon">
+    <nav>
+        <ul>
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="Services.html">Services</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="testimonials.html">testimonials</a></li>
+             <li><a href="enquire.html">Enquire</a></li>
+        </ul>
+    </nav>
+</header>
+
+   <H1>Here is a few testimonials of our current and/or previous customers</H1>
+
+   <P>Their solar panel cleaning service made a huge difference. Our panels are performing better than ever. 
+        The team was friendly and explained everything clearly.
+         Nomsa K.,Homeowner</P>
+<BR>
+    <P>I used Sky Bright Services for painting the outside of my house. 
+        The finish looks fresh and neat, and the colour is exactly what we wanted. Excellent service from start to finish.
+        Thabo D.,Property Owner</P>
+<BR>
+    <P>Professional, reliable, and affordable — Sky Bright Services is my go-to for solar and maintenance work.
+         I’ve already recommended them to friends and family.
+        Johan V.,Small Business Owner</P>
+<BR>
+    <P>Sky Bright Services installed solar panels at my home, and the results have been amazing.
+         My electricity bill is almost half of what it used to be. The team was professional and worked quickly. 
+        Lerato M.,Witbank</P>
+<BR>
+        <p>The team at Sky Bright Services was incredibly professional.
+             They completed the solar installation ahead of schedule and explained everything clearly. 
+            - Sipho M., Pretoria</p>
+<BR>
+        <p>I hired Sky Bright Services to clean and maintain our solar panels. 
+            The difference was noticeable immediately, and their staff were courteous and knowledgeable. 
+            - Lerato P., Johannesburg</p>
+<BR>
+        <p>Sky Bright Services painted the interior of our office. 
+            The result was flawless, and they worked quickly without disrupting our business. 
+             - Amanda T., Cape Town</p>
+<BR>
+        <p>The maintenance team from Sky Bright Services is fantastic.
+             Always on time, friendly, and efficient. Our solar system has never worked better.
+              - Thabo S., Durban</p>
+<BR>
+     <p>I used Sky Bright Services for a full home solar consultation and installation. 
+        The staff were professional, explained everything, and now our electricity bills are much lower.
+         - Naledi K., Bloemfontein</p>
+
+    
+<BR>
+
+  <footer id="footer-ribbon">
+        <ul>
+       <li>
+        Call us
+             <p>041 368 7655</p>
+        </li>
+            <li>
+                Email us
+             <p><a href="mailto:skybrightservices@gmail.com">skybrightservices@gmail.com</a></p>
+            </li>
+            <li>
+                Business Hours
+           
+            <P>Monday to friday 08:00 - 18:00</P>
+             </li>
+            
+        </ul>
+     
+    </footer>
+</body>
+ 
+</html>
+
+<!--https://www.youtube.com/watch?v=rMK1eGi5k7I-->
+<!--zahra bulbulia-->
+<!--w3schools-->

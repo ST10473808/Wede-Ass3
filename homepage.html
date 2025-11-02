@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="View our services with proven results.">
+    <meta name="keywords" content="Services we offer, proven results, Solar Panels, House painting, soloar panel installation">
+    <meta name="author" content="Armand Kruger">
+    <title>Sky Bright Services</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <!--dark mode-->
+   <button onclick="toggleDarkMode()">Dark Mode</button>
+
+   <script>
+function toggleDarkMode() {
+ 
+  document.body.classList.toggle("dark-mode");
+
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// when the page loads the them stays the same
+window.addEventListener("load",() => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+</script>
+
+   <header id="ribbon">
+    <nav>
+        <ul>
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="Services.html">Services</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a href="testimonials.html">testimonials</a></li>
+              <li><a href="enquire.html">Enquire</a></li>
+        </ul>
+    </nav>
+</header>
+ <section>
+       <h1>Brightening Witbank with reliable Solar Panels</h1>
+       <h4>Affordable solar panel installation,cleaning and maintenance at your fingertips.
+           Whether its for your house or your business we do it all</h4>
+    </section>
+
+        
+
+        <div class="section1"><H2>Services we offer </H2>
+ 
+        <ul style="color:#f39c12; ;">
+            <li>Solar panel installation</li>
+            <li>House painting</li>
+            <li>Gutter cleaning and repairs</li>
+            <li>Solar Panel cleaning and maintenance</li>
+        </ul>
+         
+       <H2>Proven results</H2>
+      
+        <img src="images/ernys-57ldq9age5U-unsplash.jpg" alt="person painting on ladder" class="img-size lightbox-img lazy">
+         <img src="images/aleksi-partanen-kBc9SXXjezA-unsplash.jpg" alt="dirty gutter "class="img-size lightbox-img">
+         <img src="images/bill-mead-wmaP3Tl80ww-unsplash.jpg" alt="" class="img-size lightbox-img">
+         <img src="images/newpowa-5ViMSDdjwB4-unsplash.jpg" alt="guy working on a solar panel" class="img-size lightbox-img">
+         <img src="images/florida-solar-fix-XZP59dwklV4-unsplash.jpg" alt="a person cleaning a solar panel" class="img-size lightbox-img">
+       </div>
+
+       <div id="lightbox">
+         <span class="close">&times;</span>
+         <img id="lightbox-img" src="" alt="">
+        </div>
+
+        <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboximg = document.getElementById("lightbox-img");
+        const closeButton = document.querySelector(".close");
+
+        // selects images that will open in lightbox
+        document.querySelectorAll(".lightbox-img").forEach(img => {
+        img.addEventListener("click",() => {
+        lightbox.style.display = "flex";
+        lightboximg.src = img.src;
+        });
+        });
+
+        // closes when clicking the X
+        closeButton.addEventListener("click", () => {
+        lightbox.style.display ="none";
+        }); 
+      
+  </script>
+
+    <footer id="footer-ribbon">
+        <ul>
+       <li>
+        Call us
+             <p>041 368 7655</p>
+        </li>
+            <li>
+                Email us
+             <p><a href="mailto:skybrightservices@gmail.com">skybrightservices@gmail.com</a></p>
+            </li>
+            <li>
+                Business Hours
+           
+            <P>Monday to friday 08:00 - 18:00</P>
+             </li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+<!--https://www.youtube.com/watch?v=rMK1eGi5k7I-->
+<!--zahra bulbulia-->
+<!--w3schools-->
